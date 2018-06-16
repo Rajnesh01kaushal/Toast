@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toast.makeText(this, "This is my toast in onCreate", Toast.LENGTH_SHORT).show();
-        
+        Toast centerToast = Toast.makeText (this, "center Toast", Toast.LENGTH_SHORT);
+        centerToast.setGravity(Gravity.CENTER,0,0);
+        centerToast.show();
     }
 
     @Override
